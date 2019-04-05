@@ -49,7 +49,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## then the cacheSolve should retrieve the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
-        inverse <- x$getInverse() ## Returning a matrix that is inverse of 'x'
+        inverse <- x$getInverse() ## Returning a matrix that is inverse of the matrix 'x'
         
         ## Returning the inverse if it is already set
         if(!is.null(inverse) ) {
