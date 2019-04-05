@@ -59,7 +59,7 @@ cacheSolve <- function(x, ...) {
         
         data <- x$get()  ## Getting the uncalculated matrix if the inverse is not yet set
         
-        inverse <- solve(data, ...) ## Calculating the inverse of the matrix
+        inverse <- solve(data, ...) ## Calculating the inverse of the matrix using solve function
         
         x$SetInverse(inverse) ## Reassigning the inverse of the matrix
         
